@@ -2,7 +2,12 @@ import React from 'react';
 
 const MemberShipForm = () => {
     return (
-        <h1>a</h1>
+        <form className="membership-form">
+            <label htmlFor="email">Email:
+                <MainInput theme="dark" text="Put your email" />
+            </label>
+            
+        </form>
     );
 }
 
