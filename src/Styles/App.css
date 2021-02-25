@@ -20,6 +20,10 @@ a {
   text-decoration: none;
 }
 
+.main-container {
+  padding: 0 20px;
+}
+
 .main-header {
   background-color: #202020;
 }
@@ -27,6 +31,10 @@ a {
 .logo {
   max-width: 40%;
   display: block;
+}
+
+.main-container__header {
+  padding: 0px;
 }
 
 .main-header__logo-container {
@@ -37,20 +45,27 @@ a {
 
 .main-header__logo__link {
   display: block;
-  padding: 1em;
+  padding: 1.5em;
   display: flex;
   justify-content: center;
   align-items: center;
+  background-color: black;
 }
 
 .main-header__navigator {
-  padding: 0;
+  padding: 0 60px;
   margin: 0;
 }
 
-.main-header__list {
+.list-ul {
   padding: 0;
   margin: 0;
+  list-style: none;
+}
+
+.main-header__list {
+  border-left: 1px solid white;
+  border-right: 1px solid white;
 }
 
 .main-header__item {
@@ -66,4 +81,20 @@ a {
   color: white;
   text-align: center;
   padding: 1em;
+}
+
+.main-footer {
+  color: white;
+  background-color: black;
+  padding: 60px 0;
+}
+
+.main-footer__item.widget {
+  border-bottom: 1px solid white;
+  padding-bottom: 30px;
+}
+
+.main-footer__link {
+  color: white;
+  padding: 10px 20px;
 }

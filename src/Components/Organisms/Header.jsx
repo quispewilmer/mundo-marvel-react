@@ -11,7 +11,7 @@ const Header = () => {
                         <img src="https://upload.wikimedia.org/wikipedia/commons/0/04/MarvelLogo.svg" alt="Marvel's logo" className="main-header__logo logo" />
                     </Link>
                 </div>
-                <Navigation />
+                <Navigation componentClass="main-header"/>
             </div>
         </header>
     );
