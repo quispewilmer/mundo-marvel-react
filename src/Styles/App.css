@@ -20,8 +20,18 @@ a {
   text-decoration: none;
 }
 
+h1, h2, h3, h4, h5, h6, p, span {
+  color: white;
+}
+
 .main-container {
   padding: 0 20px;
+  max-width: 1100px;
+  margin: auto;
+}
+
+#root {
+  background-color: #202020;  
 }
 
 .main-header {
@@ -124,4 +134,13 @@ a {
 .main-input--dark:focus {
   border: 1px solid red;
   box-shadow: 0px;
+}
+
+.main-default-banner {
+  --opacity: rgba(0,0,0,.6);
+  background-image: linear-gradient(var(--opacity), var(--opacity)), url('https://i.pinimg.com/originals/2a/9b/46/2a9b464aa9fac105d8a1bb8466211d60.jpg');
+  padding: 60px 0;
+  background-position: center;
+  background-attachment: fixed;
+  background-size: cover;
 }
