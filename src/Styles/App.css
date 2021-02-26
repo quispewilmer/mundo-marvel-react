@@ -98,3 +98,30 @@ a {
   color: white;
   padding: 10px 20px;
 }
+
+.membership-form {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+.form-element {
+  border-radius: 1px;
+  border: 1px solid rgba(255, 255, 255, .6);
+  padding: 10px 30px;
+  background-color: #202020;
+  color: white;
+}
+
+.button {
+  cursor: pointer;
+}
+
+.main-input {
+  margin-top: 8px;
+}
+
+.main-input--dark:focus {
+  border: 1px solid red;
+  box-shadow: 0px;
+}
