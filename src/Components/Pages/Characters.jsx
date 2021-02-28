@@ -1,6 +1,6 @@
 import React from 'react';
 import DefaultBanner from '../Atoms/DefaultBanner';
-import GridCharacters from '../Organisms/GridCharacters'
+import GridCharacters from '../Organisms/GridCharacters';
 
 const Characters = () => {
     return (
