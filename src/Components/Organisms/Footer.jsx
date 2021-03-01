@@ -4,7 +4,7 @@ import MemberShipForm from '../Molecules/MemberShipForm';
 
 const Footer = () => {
     return (
-        <footer class="main-footer">
+        <footer className="main-footer">
             <div className="main-container main-container__footer">
                 <div className="main-footer__item widget">
                     <h1 className="main-footer__title">About us</h1>
