@@ -1,8 +1,12 @@
 import React from 'react';
+import axios from 'axios';
 
 class CharacterPage extends React.Component {
-    constructor(match) {
-        this.match = match;
+    constructor(props) {
+        super(props);
+        this.state = {
+            characters: []
+        }
     }
 
     componentDidMount() {
@@ -14,10 +18,15 @@ class CharacterPage extends React.Component {
             });
         });
     }
-
+    
     render() {
+        let characterToShow = this.state.characters.filter(
+            character => 
+            character.id == this.props.match.params.id)[0];
+
         return (
-            <h1>{match.params.id}</h1>
+            <div>
+            </div>
         );
     }
 }

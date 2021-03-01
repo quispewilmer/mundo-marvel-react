@@ -1,5 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import {Link} from 'react-router-dom';
 
 class CharacterCard extends React.Component {
     constructor(props) {
@@ -9,7 +10,9 @@ class CharacterCard extends React.Component {
     render() {
         return (
             <div className="character-card">
-                <img src={this.props.image} alt={this.props.title} className="character-card__image"/>
+                <Link to={this.props.link}>
+                    <img src={this.props.image} alt={this.props.title} className="character-card__image"/>
+                </Link>
             </div>
         );
     }
