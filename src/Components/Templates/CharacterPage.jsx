@@ -1,11 +1,12 @@
 import React from 'react';
 import axios from 'axios';
+import CharacterTemplate from './CharacterTemplate';
 
 class CharacterPage extends React.Component {
     constructor(props) {
         super(props);
         this.state = {
-            characters: []
+            characters: [],
         }
     }
 
@@ -14,18 +15,21 @@ class CharacterPage extends React.Component {
         .then(response => response.json())
         .then(data => {
             this.setState({
-                characters: data.data.results
+                characters: data.data.results,
             });
         });
     }
     
     render() {
-        let characterToShow = this.state.characters.filter(
-            character => 
-            character.id == this.props.match.params.id)[0];
+        const characters = this.state.characters;
 
         return (
-            <div>
+            <div className="main-container">
+                <CharacterTemplate character={
+                    characters.filter(
+                        character => 
+                        character.id == this.props.match.params.id)[0]
+                } />
             </div>
         );
     }

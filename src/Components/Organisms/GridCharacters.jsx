@@ -24,7 +24,7 @@ class GridCharacters extends React.Component {
             <div className="main-container">
                 <div className="grid-characters-container">
                     {this.state.characters.map((character) => {
-                        return <CharacterCard title={character.name} image={`${character.thumbnail.path}/standard_fantastic.jpg`} link={`/characters/${character.id}`}/>
+                        return <CharacterCard key={character.id} title={character.name} image={`${character.thumbnail.path}/standard_fantastic.jpg`} link={`/characters/${character.id}`}/>
                     })}
                 </div>
             </div>

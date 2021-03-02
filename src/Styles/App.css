@@ -25,7 +25,7 @@ h1, h2, h3, h4, h5, h6, p, span {
 }
 
 .main-container {
-  padding: 0 20px;
+  padding: 30px 20px;
   max-width: 1100px;
   margin: auto;
 }
@@ -41,6 +41,10 @@ h1, h2, h3, h4, h5, h6, p, span {
 .logo {
   max-width: 40%;
   display: block;
+}
+
+.h2-title {
+  font-size: 16px;
 }
 
 .main-container__header {
@@ -148,4 +152,32 @@ h1, h2, h3, h4, h5, h6, p, span {
 .grid-characters-container {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
+  grid-gap: 20px 10px;
+}
+
+.character-card {
+  box-shadow: 0px 10px 30px black;
+  background-color: black;
+  overflow: hidden;
+}
+
+.character-card:hover {
+  animation: animar-card;
+}
+
+.character-card__content-container {
+  text-align: center;
+  padding: 10px 20px;
+}
+
+.character-card__image-container {
+  background-image: linear-gradient(red, blue);
+}
+
+.character-card__image {
+  width: 100%;
+}
+
+@keyframes animar-card {
+
 }
